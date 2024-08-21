@@ -19,7 +19,7 @@ class MainPageState extends State<MainPage> {
             SizedBox(
               width: double.infinity,
               child: Text(
-                "안녕하세요\n무엇이라 불러드릴까요?",
+                "안녕하세요\n무엇이라 불러드릴까요?", //오
                 style: TextStyle(
                   fontSize: 27.0,
                 ),
