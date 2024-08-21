@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:three_thousand/main_page.dart';
 
 class AccountEditPage extends StatefulWidget {
   @override
@@ -53,7 +54,7 @@ class AccountEditPageState extends State<AccountEditPage> {
                   onPressed: (){
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => AccountEditPage()),
+                      MaterialPageRoute(builder: (context) => MainPage()),
                     );
                   },
                   child: Text(

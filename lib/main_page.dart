@@ -15,46 +15,15 @@ class MainPageState extends State<MainPage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            SizedBox(height: 40.0,),
-            SizedBox(
-              width: double.infinity,
-              child: Text(
-                "안녕하세요\n무엇이라 불러드릴까요?", //오오오
-                style: TextStyle(
-                  fontSize: 27.0,
-                ),
-                textAlign: TextAlign.left,
-              ),
-            ),
-            SizedBox(height: 40.0,),
-            SizedBox(
-              width: double.infinity,
-              height: 60.0,
-              child: TextField(
-                decoration: InputDecoration(
-                  labelText: "이름",
-                  hintText: "2~10자리",
-                  filled: true,
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-                controller: name_controller,
-              ),
-            ),
-            SizedBox(height: 40.0,),
+            Expanded(child: SizedBox()),
             SizedBox(
               height: 60.0,
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => AccountEditPage()),
-                  );
                 },
                 child: Text(
-                  "다음",
+                  "오늘 묵상 기록하기",
                   style: TextStyle(
                     fontSize: 18.0,
                   ),
